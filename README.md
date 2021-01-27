@@ -1,7 +1,7 @@
 # ACOS Workshops' solutions
 Solutions of the ACOS Workshops' problems by O.Malchenko
 ## Notes on 3d WS
-//The first and second tasks are skipped as trivial, since they only required to become common to basics of RISC-V assembler//
+//The first and second tasks are skipped as trivial, since they only required to become used to basics of RISC-V assembler//
 
 //Tasks have been done in order, presented on the DSBA ACOS course site//
 
