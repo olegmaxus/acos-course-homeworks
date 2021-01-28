@@ -30,7 +30,7 @@ task_2:
 	#   3. 0x0080006f:
 	#      0x0080006f = 0000 0000 1000 0000 0000 0000 0110 1111 (base 2)
 	#      Opcode is 1101111_2, the only instruction corresponding to such 'opcode' is JAL, thus instruction is of UJ-type
-	#      'rd' is 00000_2, that is rd = x0 = zero, 'immediate' is 0000 0000 0000 0000 0100 + '...0_2', i.e. immediate is 0x00005 = 0x5
+	#      'rd' is 00000_2, that is rd = x0 = zero, 'immediate' is 0000 0000 0000 0000 0100 + '...0_2', i.e. immediate is 0x00008 = 0x8
 	#
 	#      Hence, the whole instruction would look like that:
 	       jal zero, 0x5
@@ -49,7 +49,7 @@ task_2:
 	#      Opcode is 1100011_2, then instruction is of SB-type
 	#      Let's then check funct3 : 'funct3' = 000, hence instruction is BEQ:
 	#      'rs1' is 00000_2, 'rs_2' is 00000_2 as well, hence:
-	#      Immediate is 0000 0000 0100 + '...0', i.e. 0x8
+	#      Immediate is 0000 0000 0100 + '...0', i.e. 0x008 = 0x8
 	#
 	#      Hence, the whole instruction would look like that:
 	       beq zero, zero, 0x8
