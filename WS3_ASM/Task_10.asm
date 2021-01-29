@@ -44,7 +44,7 @@ main:
 	# an overflow occurs if x + y < x && x + y < y
 	# for x32 architecture of the assembley compiler on ubuntu linux VM
 	# that happens if for some given pair (x,y) and operation R="+" : R(x,y) >= 2^31
-	# let's then check the condition: if (x+y<x && x+y<y) then: overflow; else: no overflow
+	# let's then check the condition: if (x+y<x || x+y<y) then: overflow; else: no overflow
 	
 	slt t3, t2, t0
 	slt t4, t2, t1
@@ -53,6 +53,6 @@ main:
 	la a0, overflow
 	ecall
 	
-	and a0, t3, t4
+	or a0, t3, t4
 	li a7, 1
 	ecall
