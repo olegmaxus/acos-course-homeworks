@@ -33,7 +33,7 @@ task_2:
 	#      'rd' is 00000_2, that is rd = x0 = zero, 'immediate' is 0000 0000 0000 0000 0100 + '...0_2', i.e. immediate is 0x00008 = 0x8
 	#
 	#      Hence, the whole instruction would look like that:
-	       jal zero, 0x5
+	       jal zero, 0x8
 	       
 	#   4. 0xfff37293:
 	#      0xfff37293 = 1111 1111 1111 0011 0111 0010 1001 0011 (base 2)
