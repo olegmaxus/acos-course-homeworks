@@ -1,6 +1,6 @@
 # ACOS Workshops' solutions
 Solutions of the ACOS Workshops' problems by O.Malchenko
-## Notes on 3d WS
+## Notes on the 3d WS
 //The first and second tasks are skipped as trivial, since they only required to become used to basics of RISC-V assembler//
 
 //Tasks have been done in order, presented on the DSBA ACOS course site//
@@ -10,9 +10,9 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 //**No licencing**//
 
 //In case of any questions, remarks, additions, please contact me via telegram//
-## Notes on 4th WS
+## Notes on the 4th WS
 //**No licencing**//
-## Notes on 5th WS
+## Notes on the 5th WS
 //In the second task the array has been implemented using stack (.space directive), elements are stored in memory in reverse order//
 
 //In the third task exception for zero division was added//
