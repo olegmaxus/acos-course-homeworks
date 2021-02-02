@@ -27,12 +27,13 @@ main:
 
 	addi t3, t3, 1 #range
 for_step:
-	beq t2, t3, end_for
+	beq t2, t3, _exit
 	print_var_int(t2)
 	newline
 	addi t2, t2, 1
 	j for_step
-end_for:
+_exit:
+	# return;
 	#exit;
 	
 	
