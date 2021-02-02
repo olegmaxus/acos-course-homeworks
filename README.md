@@ -7,13 +7,19 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //Each task (from 3rd to 11th) are presented in this repository in .asm extension//
 
-//No licencing//
+//**No licencing**//
 
 //In case of any questions, remarks, additions, please contact me via telegram//
 ## Notes on 4th WS
-//
+//**No licencing**//
 ## Notes on 5th WS
-//
+//In the second task the array has been implemented using stack (.space directive), elements are stored in memory in reverse order//
+
+//In the third task exception for zero division was added//
+
+//In the last task case 0^0 gives 1 (python-like explicit definition)//
+
+//**No licencing**//
 ## Links
 [Workshop 3](https://andrewt0301.github.io/hse-acos-course/part1ca/03_CPU/lecture.html)
 
