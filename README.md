@@ -9,7 +9,7 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //**No licencing**//
 
-//In case of any questions, remarks, additions, please contact me via telegram//
+//In case of any questions, remarks, additions, please contact me via telegram: @olegmaxus//
 ## Notes on the 4th WS
 //**No licencing**//
 ## Notes on the 5th WS
