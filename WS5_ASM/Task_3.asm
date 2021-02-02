@@ -44,10 +44,10 @@ end_while:
 	print_var_int(R)
 	print_str(")")
 	newline
-	j exit
+	j _exit
 	
 error_exit:
 	print_str("\nERROR: division by zero has occured!\nThe program terminated with an emergency exit.\n")
-	j exit
-exit:
+	j _exit
+_exit:
 	#return;
