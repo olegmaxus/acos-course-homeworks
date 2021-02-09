@@ -19,6 +19,8 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //In the last task case 0^0 gives 1 (python-like explicit definition)
 
+||**No licensing**||
+## Notes on the 6th WS
 ||**No licencing**||
 ## Links
 [Workshop 3](https://andrewt0301.github.io/hse-acos-course/part1ca/03_CPU/lecture.html)
@@ -26,3 +28,11 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 [Workshop 4](https://andrewt0301.github.io/hse-acos-course/part1ca/04_Instructions/lecture.html)
 
 [Workshop 5](https://andrewt0301.github.io/hse-acos-course/part1ca/05_MacrosBranchesArrays/lecture.html)
+
+[Workshop 6](https://andrewt0301.github.io/hse-acos-course/part1ca/06_CallStack/lecture.html)
+
+[Workshop 7](https://andrewt0301.github.io/hse-acos-course/part1ca/07_FP/lecture.html)
+
+[Workshop 8](https://andrewt0301.github.io/hse-acos-course/part1ca/08_MMIO/lecture.html)
+
+[Workshop 9](https://andrewt0301.github.io/hse-acos-course/part1ca/09_Pipeline/lecture.html)
