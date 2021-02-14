@@ -14,12 +14,13 @@ main:
 	print_str("Please, input a floating point number of SINGLE precision: ")
 	li a7, 6
 	ecall
-	fmv.x.s a0, fa0
+	fmv.x.s a1, fa0
 	print_str("Please, input a floating point number of DOUBLE precision: ")
 	li a7, 7
 	ecall
 	fsd fa0, 0(sp)
 	print_str("Binary value for single precision float is: ")
+	mv a0, a1
 	li a7, 35
 	ecall
 	newline
