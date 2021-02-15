@@ -25,7 +25,7 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //I have done it two ways: by hand (my own translation), and using risc-v toolchain, namely using linux command line:
 ```console
-riscv64-unknown-linux-gnu-gcc sample_name.c -S
+acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_name.c -S
 ```
 
 ||**No licencing**||
