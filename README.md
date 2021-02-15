@@ -24,7 +24,7 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 //The first two tasks required me to translate C code into risc-v assembly code
 
 //I have done it two ways: by hand (my own translation), and using risc-v toolchain, namely using linux command line:
-```shell
+```console
 acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_name.c -S
 ```
 
