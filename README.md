@@ -21,6 +21,13 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 ||**No licensing**||
 ## Notes on the 6th WS
+//The first two tasks required me to translate C code into risc-v assembly code
+
+//I have done it two ways: by hand (my own translation), and using risc-v toolchain, namely using linux command line:
+```console
+riscv64-unknown-linux-gnu-gcc sample_name.c -S
+```
+
 ||**No licencing**||
 ## Links
 [Workshop 3](https://andrewt0301.github.io/hse-acos-course/part1ca/03_CPU/lecture.html)
