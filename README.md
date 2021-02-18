@@ -7,11 +7,10 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //Each task (from 3rd to 11th) are presented in this repository in .asm extension
 
-||**No licencing**||
 
 //In case of any questions, remarks, additions, please contact me via telegram: @olegmaxus
 ## Notes on the 4th WS
-||**No licencing**||
+//
 ## Notes on the 5th WS
 //In the second task the array has been implemented using stack (.space directive), elements are stored in memory in reverse order
 
@@ -19,7 +18,6 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //In the last task case 0^0 gives 1 (python-like explicit definition)
 
-||**No licensing**||
 ## Notes on the 6th WS
 //The first two tasks required me to translate C code into risc-v assembly code
 
@@ -28,7 +26,6 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_name.c -S
 ```
 
-||**No licencing**||
 ## Notes on the 7th WS
 //The 'no_dups.s' task was quite hard to implement
 
