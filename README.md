@@ -10,7 +10,7 @@ Solutions of the ACOS Workshops' problems by O.Malchenko
 
 //In case of any questions, remarks, additions, please contact me via telegram: @olegmaxus
 ## Notes on the 4th WS
-//
+//No special notes
 ## Notes on the 5th WS
 //In the second task the array has been implemented using stack (.space directive), elements are stored in memory in reverse order
 
