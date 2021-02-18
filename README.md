@@ -29,6 +29,11 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 ```
 
 ||**No licencing**||
+## Notes on the 7th WS
+//The 'no_dups.s' task was quite hard to implement
+
+//There may be a prettier implementation of fprint2.s, using bit shifts, that is less bit_print loops are used
+
 ## Links
 [Workshop 3](https://andrewt0301.github.io/hse-acos-course/part1ca/03_CPU/lecture.html)
 
