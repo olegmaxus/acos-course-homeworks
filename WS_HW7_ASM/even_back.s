@@ -46,7 +46,7 @@ print:
 	flw float, 0(sp)
 	addi sp, sp, 4
 	
-	print_str("\n")
+	newline
 	print_var_float(float)
 	
 	j print
