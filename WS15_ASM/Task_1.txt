@@ -1,0 +1,48 @@
+1. Explain why passing arguments to functions by reference or by pointer is not a good idea unless it is really necessary. Explain the difference between:
+
+	void add(int* z, int* x, int* y)
+	{
+    	*z = *x + *y;
+	}
+	
+   and:
+
+	int add(int x, int y)
+	{
+    	return x + y;
+	}
+	
+Explanation:
+	
+	- Why passing arguments to functions by reference or by pointer is not a good idea, unless it is really necessary?
+	- It is a bad idea, because using pointers and references means allocating additional space for them in the memory in order to store the address of the template, you
+	  are creating a pointer or a reference of. Performing arithmetics to a pointer or to a reference to the element means changing the elements itself as well. That is,
+	  if you run the following c++ code:
+	  
+	  int main()
+	  {
+	  	int a, b;
+	  	std::cin >> a;
+
+	  	int& ap = a;
+	  	ap = ap + 2;
+	  	std::cout << ap << std::endl << &ap << std::endl << a << "\n" << &a;
+
+	  } 
+	  
+	  Then you'd be able to see that changing a pointer changes the element "a" as well. 
+	  It means that, for example, if you want to preserve the initial element as it is you have to use constant pointers or references as function parameters, since otherwise 
+	  the initial value will be changed along with its pointer. Moreover, each time, dealing with references and pointers the user is calling to the memory "twice" at each step,
+	  as far as each pointer or reference only stores the address of the initial template element, and thus by passing them as arguments for the function, we are causing the CPU
+	  to overperform, whereas, while using neither pointers, nor referrences, but rather regular values, would have meant only dealing with values, not addresses, and hence CPU
+	  wouldn't have been overused by load and store instructions, called by pointer arithmetics. 
+	
+	
+	
+	
+	- Explain the difference between the two given functions.
+	- In the void add() function the pointers are used as arguments, thus, when performing operations of pointer addition, the memory is called two times in order to load the values
+	  for the pointers, in order to add them together, and thus additional memory manipulations have to be done, just in order to write the sum of x and y to z. In the second version:
+	  int add() function uses the integer elements, passed just as values, not as pointers, and hence the CPU is not "overutilised" during the addition, as no additional memory addresings
+	  are performed throughout the function's runtime, that means that in fact the second function generally performs better than the first one, despite insignificance level of less
+	  that ~1*10^(-5) ticks.
