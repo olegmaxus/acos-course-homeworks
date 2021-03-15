@@ -45,3 +45,9 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 [Workshop 8](https://andrewt0301.github.io/hse-acos-course/part1ca/08_MMIO/lecture.html)
 
 [Workshop 9](https://andrewt0301.github.io/hse-acos-course/part1ca/09_Pipeline/lecture.html)
+
+[Workshop 10](https://andrewt0301.github.io/hse-acos-course/part1ca/10_Exceptions/lecture.html)
+
+[Workshop 11](https://andrewt0301.github.io/hse-acos-course/part1ca/11_Caches/lecture.html)
+
+[Workshop 15](https://andrewt0301.github.io/hse-acos-course/part1ca/15_Optimize/lecture.html)
