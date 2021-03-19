@@ -52,14 +52,3 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 
 [Workshop 15](https://andrewt0301.github.io/hse-acos-course/part1ca/15_Optimize/lecture.html)
 
-``` s
-  print_str("Please, input the path to the source file to be copied:\n")
-	ssbrk(256)
-	mv src, a0
-	read_dir(src)
-
-	print_str("Please, input the path to the target file, to copy source to:\n")
-	ssbrk(256)
-	mv trg, a0
-	read_dir(trg)
-```
