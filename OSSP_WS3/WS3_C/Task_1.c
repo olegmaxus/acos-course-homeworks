@@ -18,7 +18,7 @@ int main()
     char buffer[2]; //avoiding \0 separate addon for new lines. (try beffer[1] if you want to know, what I mean)
     ssize_t ERROR_IN, MSG_LEN = sizeof("Hello! Please, enter the chars one by one.\nExample:\nIn[0] : 1\nOut[0]: 2\nIn[0] :...\n\n");
     write(1, "Hello! Please, enter the chars one by one.\nExample:\nIn[0] : 1\nOut[0]: 2\nIn[0] :...\n\n", MSG_LEN);
-    while((ERROR_IN = read(1, buffer, sizeof(buffer))) != 0)
+    while((ERROR_IN = read(0, buffer, sizeof(buffer))) != 0)
     {
         buffer[0]++;
         write(1, buffer, ERROR_IN);
