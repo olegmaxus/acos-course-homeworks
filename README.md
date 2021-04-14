@@ -37,7 +37,7 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 ## Notes on the 4th OSSP WS
  <ins>*Part 1*</ins>
  
-// original_[static/dynamic].sh are for Task 1 in Part 1, improved_[static/dynamic].sh are for Homework Task 2, where we have to improve original Task
+// Note: original_[static/dynamic].sh are for Task 1 in Part 1, improved_[static/dynamic].sh are for Homework Task 2, where we have to improve original Task
 
 // I have added bash files (.sh) with linux shell for simplicity
 
