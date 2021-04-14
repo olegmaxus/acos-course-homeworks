@@ -1,0 +1,33 @@
+acos@acos-vm:~$ cd Desktop
+acos@acos-vm:~/Desktop$ cd acos_materials
+acos@acos-vm:~/Desktop/acos_materials$ cd OSSP_WS4
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ chmod u+x original_static.sh original_dynamic.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ chmod u+x improved_static.sh improved_dynamic.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ chmod u+x clearall_static.sh clearall_dynamic.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./original_static.sh
+a - fred.o
+a - john.o
+fred: you passed x = 15
+john: you passed x = 12.
+john: x^2 = sqrt(exp(log(x^4))) = 144.
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./clearall_static.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./improved_static.sh
+a - fred.o
+a - john.o
+fred: you passed x = 15
+john: you passed x = 12.
+john: x^2 = sqrt(exp(log(x^4))) = 144.
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./clearall_static.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./original_dynamic.sh
+bill: you passed "Hello World!"
+sam: you passed a string "This text has 28 chars, lol.", which has 28 chars.
+sam: you passed an integer x = 3.
+sam: if you write string 3 times, the total number of chars in it will be 84.
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./clearall_dynamic.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./improved_dynamic.sh
+bill: you passed "Hello World!"
+sam: you passed a string "This text has 28 chars, lol.", which has 28 chars.
+sam: you passed an integer x = 3.
+sam: if you write string 3 times, the total number of chars in it will be 84.
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ ./clearall_dynamic.sh
+acos@acos-vm:~/Desktop/acos_materials/OSSP_WS4$ exit
