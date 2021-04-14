@@ -35,7 +35,7 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 // C-tasks are located in WS3_C subfolder
 
 ## Notes on the 4th OSSP WS
- *Part 1*
+ _*Part 1*_
  
 // I have added bash files (.sh) with linux shell for simplicity.
 
