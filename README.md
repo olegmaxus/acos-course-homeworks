@@ -33,6 +33,24 @@ acos@acos-vm:~/Desktop/acos_materaials$ riscv64-unknown-linux-gnu-gcc sample_nam
 
 ## Notes on the 3rd OSSP WS
 // C-tasks are located in WS3_C subfolder
+
+## Notes on the 4th OSSP WS
+ *Part 1*
+ 
+// I have added bash files (.sh) with linux shell for simplicity.
+
+// In CMD_EXAMPLE.txt you may find the sequence of console commands, which will give access for .sh files to be executed
+
+// Please, before executing my .sh files, make sure that all the bash files, as well as all function files (fred.c, etc.) are in same folder
+
+// Please, reach me out in telegram in case, there are some issues with execution of the bash files, i provided
+
+// P.S.: in order to provide access for a bash file to be executed one may use the following command:
+```console
+acos@acos-vm:~/Desktop/acos_materaials/OSSP_WS4$ chmod u+x bash_name.sh
+acos@acos-vm:~/Desktop/acos_materaials/OSSP_WS4$ ./bash_name.sh
+```
+
 ## Links
 [Workshop 3](https://andrewt0301.github.io/hse-acos-course/part1ca/03_CPU/lecture.html)
 
