@@ -7,7 +7,7 @@ JOHN=john.c
 SAM=sam.c
 
 .PHONY: all
-all: libfoo.so dynamic_run all.o libfoo.a static_run
+all: libfoo.so dynamic_run libfoo.a static_run
 
 dynamic_run: libfoo.so
 	gcc -Wall -o $@ $(DYNAMIC) -lfoo -lm -L.
