@@ -42,28 +42,28 @@ int main(int argc, char* argv[])
 	stats.content = (int*) &statArr;
 	stats.size = aleng(statArr);
 	
-    // AVERAGE //
+	// AVERAGE //
     
 	td_descript = pthread_create(&trd_avg, NULL, average_thread, (void*)&stats);
 	if(td_descript != 0){perror("pthread_create()"); return -1;}
 	td_descript = pthread_join(trd_avg, NULL);
-    if(td_descript != 0){perror("pthread_join()"); return -1;}
+	if(td_descript != 0){perror("pthread_join()"); return -1;}
 
 	// MINIMUM //
 
 	td_descript = pthread_create(&trd_min, NULL, minimum_thread, (void*)&stats);
 	if(td_descript != 0){perror("pthread_create()"); return -1;}
 	td_descript = pthread_join(trd_min, NULL);
-    if(td_descript != 0){perror("pthread_join()"); return -1;}
+	if(td_descript != 0){perror("pthread_join()"); return -1;}
     
-    // MAXIMUM //
+	// MAXIMUM //
     
 	td_descript = pthread_create(&trd_max, NULL, maximum_thread, (void*)&stats);
 	if(td_descript != 0){perror("pthread_create()"); return -1;}
 	td_descript = pthread_join(trd_max, NULL);
-    if(td_descript != 0){perror("pthread_join()"); return -1;}
+	if(td_descript != 0){perror("pthread_join()"); return -1;}
 
-    // PARENT PRINTING //
+	// PARENT PRINTING //
     
 	printf("The %s value is %.8lf\n", name(average), (double) average);
 	printf("The %s value is %d\n", name(minimum), (int) minimum);
