@@ -74,8 +74,8 @@ float tdiff(struct timeval *start, struct timeval *end)
 
 static void* multiply_thread(void* redundant)
 {
-	int mtx_des;
-	int thread_which = which++;
+    int mtx_des;
+    int thread_which = which++;
 	
 	// COMPUTING EACH ROW SEPARATELY DEPENDING ON THE COUNTER //
 	
