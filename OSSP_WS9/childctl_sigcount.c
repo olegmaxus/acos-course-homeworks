@@ -110,9 +110,9 @@ static void signal_handler(int signal)
 static void exit_handler(int signal)
 {
 	printf("[Caught: %s]\n", (char*) strsignal(signal));
-  ++QUIT_STATE;
-  if(QUIT_STATE == 3)
-  {
-    exit(EXIT_SUCCESS);
-  }
+	++QUIT_STATE;
+	if(QUIT_STATE == 3)
+	{
+		exit(EXIT_SUCCESS);
+	}
 }
