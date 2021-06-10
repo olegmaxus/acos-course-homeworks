@@ -11,10 +11,10 @@ int main(int argc, char* argv[])
 {
         char* cmd = argv[1];
         char* fout = argv[2];
-		int _fout = open(fout, O_WRONLY|O_TRUNC|O_CREAT, S_IRUSR|S_IWUSR);
+	int _fout = open(fout, O_WRONLY|O_TRUNC|O_CREAT, S_IRUSR|S_IWUSR);
 
-		close(STDOUT_FILENO);
-		dup2(_fout, STDOUT_FILENO);
+	close(STDOUT_FILENO);
+	dup2(_fout, STDOUT_FILENO);
 		
         int status = execlp(cmd, cmd, NULL);
 
