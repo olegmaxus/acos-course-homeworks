@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 	
 	mq_send(mqd, console_msg, strlen(console_msg), prior);
 	
-	printf("The message was successfully sent\n");
+	printf("\"%s\" was successfully sent\n", argv[2]);
 	if (mq_unlink(argv[1]) == -1)
 	{
 		procerr("Failed to unlink the queue");
