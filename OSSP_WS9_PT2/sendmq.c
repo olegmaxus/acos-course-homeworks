@@ -36,11 +36,15 @@ int main(int argc, char* argv[])
 	mq_send(mqd, console_msg, strlen(console_msg), prior);
 	
 	printf("\"%s\" was successfully sent\n", argv[2]);
+	
+	/*
 	if (mq_unlink(argv[1]) == -1)
 	{
 		procerr("Failed to unlink the queue");
 	}
-	printf("%s closed successfully\n", argv[1]);
+	printf("%s unlinked successfully\n", argv[1]);
+	*///unlinking is not yet needed
+	
 	exit(EXIT_SUCCESS);
 }
 
