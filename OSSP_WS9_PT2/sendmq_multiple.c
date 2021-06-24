@@ -31,21 +31,22 @@ int main(int argc, char* argv[])
 	
 	unsigned int prior = 1;
 	
-	char* console_msg = argv[2];
-	
-	mq_send(mqd, console_msg, strlen(console_msg), prior);
-	
-	printf("\"%s\" was successfully sent\n", argv[2]);
-	
-	/*
-	if (mq_unlink(argv[1]) == -1)
+	printf("Please, enter ten messages.\n---------\n");
+	int i = 0;
+	while(i < 10)
 	{
-		procerr("Failed to unlink the queue");
+		char console_msg[2048];
+		printf("Message: ");
+		scanf("%s", console_msg);
+		printf("Priority: ");
+		scanf("%u", &prior);
+		printf("---------\n");
+		mq_send(mqd, console_msg, strlen(console_msg), prior);
+		i++;
 	}
-	printf("%s unlinked successfully\n", argv[1]);
-	*///unlinking is not yet needed
 	
-	exit(EXIT_SUCCESS);
+	printf("Messages were successfully sent\n");
+
 }
 
 static void procerr(const char* error)
@@ -53,3 +54,4 @@ static void procerr(const char* error)
 	perror(error);
 	exit(EXIT_FAILURE);
 }
+	
