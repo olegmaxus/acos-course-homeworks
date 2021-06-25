@@ -22,8 +22,13 @@ int main(int argc, char* argv[])
 	
 	if ((mqd = mq_open(argv[1], O_RDWR | O_CREAT | O_EXCL, S_IRUSR | S_IWUSR, &attrs)) == -1)
 	{
-		procerr("Failed to initialize the message queue");
+		perror("Failed to initialize the message queue");
+		if ((mqd = mq_open(argv[1], O_RDWR, S_IRUSR | S_IWUSR)) == -1)
+		{
+			procerr("Failed to open already existing queue");
+		}
 	}
+	
 	
 	printf("%s opened successfully\n", argv[1]);
 	
