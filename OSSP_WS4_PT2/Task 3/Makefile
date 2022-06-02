@@ -1,16 +1,16 @@
 BUILDNAME_SRC=proc.c
-BUILDNAME_LIB=lib.h
+BUILDNAME_LIB=lib.c
 
 .PHONY: all
 all: lib.o libfoo.so program
 
-program: (1)
-        gcc -Wall -o $@ $(BUILDNAME_SRC) -lfoo -L.
-        export (2)=.
+program: libfoo.so
+	gcc -Wall  -o $@ $(BUILDNAME_SRC) -lfoo -lm -L.
+	export LD_LIBRARY_PATH=.
 lib.o: $(BUILDNAME_LIB)
-        gcc -c -Wall (3) (4)
+	gcc -c -Wall -fPIC -lm $<
 libfoo.so: lib.o
-        gcc -Wall (5) -o $@ $<
+	gcc -Wall -shared -o  $@ $<
 
 clear:
-        rm -f *.o *.so *~ program
+	rm -f *.o *.so *~ program
