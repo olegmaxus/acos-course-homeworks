@@ -1,5 +1,5 @@
 # ACOS Workshops' solutions
-Solutions of the ACOS Workshops' problems by O.Malchenko
+Solutions of the ACOS Workshops' problems by O. Sternberg
 ## Notes on the 3d WS
 //The first and second tasks are skipped as trivial, since they only required to become used to basics of RISC-V assembler
 
